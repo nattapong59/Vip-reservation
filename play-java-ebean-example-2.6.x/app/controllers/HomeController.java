@@ -10,6 +10,12 @@ import play.mvc.Results;
 import repository.CompanyRepository;
 import repository.ComputerRepository;
 
+import java.util.List;
+import models.Medical_Records;
+import models.Employee;
+import models.Booking;
+import models.Room;
+
 import javax.inject.Inject;
 import javax.persistence.PersistenceException;
 import java.util.Map;
@@ -19,6 +25,10 @@ import java.util.concurrent.CompletionStage;
  * Manage a database of computers
  */
 public class HomeController extends Controller {
+    List<Medical_Records> Medical =Medical_Records.find.all();
+    List<Employee> Employees =Employee.find.all();
+    List<Booking> Bookings =Booking.find.all();
+    List<Room> Rooms =Room.find.all();
 
     private final ComputerRepository computerRepository;
     private final CompanyRepository companyRepository;
