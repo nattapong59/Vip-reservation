@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>จองห้องพัก</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/assets/stylesheets/responsee.css">
+      <link rel="stylesheet" href="/assets/stylesheets/owl.carousel.css">
+      <link rel="stylesheet" href="/assets/stylesheets/owl.theme.css">
+      <link rel="stylesheet" href="/assets/stylesheets/booking.css">
+      <link rel="stylesheet" href="/assets/stylesheets/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <!-- CUSTOM STYLE -->  
+      <script type="text/javascript" src="/assets/javascripts/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="/assets/javascripts/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="/assets/javascripts/responsee.js"></script>   
+   </head>
+    <body class="size-1140">
+      <!-- TOP NAV WITH LOGO -->  
+      <header>
+            <nav>
+                    <div class="line">
+                       <div class="top-nav">              
+                          <div class="logo hide-l">
+                            <a href="http://localhost:9000/"><strong>Hospital's</strong><br/>Reservation</a>
+                          </div>                  
+                          <p class="nav-text"><i class="fa fa-bars" style="font-size:23px;color:#fff;"></i></p>
+                          <ul class="s-12 l-2">
+                            <li class="logo hide-s hide-m">
+                               <a href="http://localhost:9000/"><strong>Hospital's</strong><br/>Reservation</a>
+                            </li>
+                         </ul>
+                          <div class="top-nav s-12 l-5">
+                            <ul class="top-ul chevron">
+                              <li><a href="http://localhost:9000/booking"style="font-size: 17px"><i class="fa fa-hotel" style="font-size:21px; color:#fff;"></i> จองห้องพัก</a>
+                              </li>
+                              <li><a href="http://localhost:9000/check"style="font-size: 17px"><i class="fa fa-calendar" style="font-size:21px; color:#fff;"></i> ตรวจสอบการจอง</a>
+                              </li>
+                              <li><a href="http://localhost:9000/rules" style="font-size: 17px"><i class="fa fa-gavel" style="font-size:21px; color:#fff;"></i> ระเบียบ</a>
+                              </li>
+                           </ul>
+      
+      
+                             <ul class="top-ul chevron right">
+                              <li><a href="../design/contact.html" style="font-size: 17px;"><i class="fa fa-user-md " style="font-size:21px; color:#fff;"></i> ผู้ดูแลระบบ</a>
+                              </li>
+                           </ul> 
+      
+      
+                          </div>
+      
+                       </div>
+                    </div>
+                 </nav>
+      </header>
+      <section>
+         <div id="head">
+            <div class="line">
+              <div class="container">
+                  <a class="center" style="font-size: 26px;">จองห้องพักผู้ป่วย</a>
+                  <br>
+                <div>
+                  <a class="center" style="font-size: 20px;">ข้อมูลผู้ป่วย</a>
+                  <hr class="line-hr center" style="width: 40%">  
+                  <label >ชื่อ-สกุลผู้ป่วย</label>
+                  <div >
+                      <input  class="box-twin" type="text" placeholder="ชื่อผู้ป่วย">
+                      <input  class="box-twin" type="text" placeholder="นามสกุล">
+                  </div>
+                  <label for="HN">เลขประจำตัวโรงพยาบาล(HN)</label>
+                  <div>                
+                      <input class="box-only" type="text" id="HN" name="HN" placeholder="">
+                  </div>
+                  
+                  <div >
+                      <label >สถานะการจองของผู้ป่วย</label><br>
+                      <input type="radio" name="booking_state" ><a style="font-size: 16px;"> ผู้ป่วยนอนโรงพยาบาลแล้ว</a><br>
+                      <input type="radio" name="booking_state" ><a style="font-size: 16px;"> จองล่วงหน้า</a>
+                  </div>
+                  <br>
+                  <div >
+                    <a class="center" style="font-size: 20px;">เลือกห้องพิเศษ</a>
+                    <hr class="line-hr center" style="width: 40%">  
+                    <br>
+                    <span> ห้องพิเศษเล็ก (ไม่มีระเบียง) </span>
+                    <br> 
+                    <input type="radio" name="booking_method" id="booking_method" value="1"><a style="font-size: 16px;"> ใช้สิทธิ ชำระเงิน ชำระเงินเต็มจำนวน  1,400 บาท /ต่อวัน</a><br> 
+                    <input type="radio" name="booking_method" id="booking_method" value="2"><a style="font-size: 16px;"> ใช้สิทธิ จ่ายตรง ชำระส่วนเกินจำนวน  200 บาท /ต่อวัน</a><br> <!---->
+                    <input type="radio" name="booking_method" id="booking_method" value="3"><a style="font-size: 16px;"> ใช้สิทธิ บัตรทอง/ประกันสังคม ชำระส่วนเกินจำนวน  1,000 บาท /ต่อวัน</a><br> <!---->
+                    <br>
+                    <span> ห้องพิเศษใหญ่ (มีระเบียง) </span>
+                    <br> 
+                    <input type="radio" name="booking_method" id="booking_method" value="4"><a style="font-size: 16px;"> ใช้สิทธิ ชำระเงิน ชำระเงินเต็มจำนวน  2,000 บาท /ต่อวัน</a><br> 
+                    <input type="radio" name="booking_method" id="booking_method" value="5"><a style="font-size: 16px;"> ใช้สิทธิ จ่ายตรง ชำระส่วนเกินจำนวน  500 บาท /ต่อวัน</a><br> <!---->
+                    <input type="radio" name="booking_method" id="booking_method" value="6"><a style="font-size: 16px;"> ใช้สิทธิ บัตรทอง/ประกันสังคม ชำระส่วนเกินจำนวน  1,600 บาท /ต่อวัน</a><br> <!---->
+                    <br>
+                    <span> ห้องVIP </span>
+                    <br> 
+                    <input type="radio" name="booking_method" id="booking_method" value="7"><a style="font-size: 16px;"> ใช้สิทธิ ชำระเงิน ชำระเงินเต็มจำนวน  3,000 บาท /ต่อวัน</a><br> 
+                    <input type="radio" name="booking_method" id="booking_method" value="8"><a style="font-size: 16px;"> ใช้สิทธิ จ่ายตรง ชำระส่วนเกินจำนวน  1,000 บาท /ต่อวัน</a><br> <!---->
+                    <input type="radio" name="booking_method" id="booking_method" value="9"><a style="font-size: 16px;"> ใช้สิทธิ บัตรทอง/ประกันสังคม ชำระส่วนเกินจำนวน  2,600 บาท /ต่อวัน</a><br> <!---->
+                  </div>
+                  <br>
+                  <a class="center" style="font-size: 20px;">ข้อมูลติดต่อ</a>
+                  <hr class="line-hr center" style="width: 40%"> 
+                  <div class="form-group"><label>ชื่อผู้จองห้องพิเศษ</label><br> 
+                    <input class="box-only" type="text" placeholder="ชื่อจริง" name="booking_fname" id="booking_fname"> 
+                    <input class="box-only" type="text" placeholder="นามสกุล" name="booking_lname" id="booking_lname">
+                  </div>
+
+                  <div class="form-group">
+                    <label>เบอร์โทรศัพท์</label><br> 
+                    <input class="box-only" type="text" placeholder="phone" name="booking_phone" id="booking_phone" aria-required="true">
+                  </div>
+                  
+                  <label for="country">Country</label>
+                  <div>  
+                    <select class="box-only" id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                  </div>
+                  <div class="clearfix right-2">
+                    <button type="submit" class="signupbtn ">ยืนยันการจอง</button>
+                    <button type="button" class="cancelbtn ">ยกเลิก</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+      </section>
+      <!-- FOOTER -->   
+      <footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>Copyright 2015, Vision Design - graphic zoo
+               </p>
+            </div>
+            <div class="s-12 l-6">
+               <p class="right">
+                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+               </p>
+            </div>
+         </div>
+      </footer> 
+   </body>
+</html>

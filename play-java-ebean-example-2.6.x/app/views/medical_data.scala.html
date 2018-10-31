@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>จองห้องพัก</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/assets/stylesheets/responsee.css">
+      <link rel="stylesheet" href="/assets/stylesheets/owl.carousel.css">
+      <link rel="stylesheet" href="/assets/stylesheets/owl.theme.css">
+      <link rel="stylesheet" href="/assets/stylesheets/employee.css">
+      <!-- CUSTOM STYLE -->  
+      <link rel="stylesheet" href="/assets/stylesheets/template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="/assets/javascripts/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="/assets/javascripts/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="/assets/javascripts/responsee.js"></script>   
+   </head>
+   <body class="size-1140">
+    <header>
+      <nav>
+              <div class="line">
+                 <div class="top-nav">              
+                    <div class="logo hide-l">
+                      <a href="http://localhost:9000/"><strong>Hospital's</strong><br/>Reservation</a>
+                    </div>                  
+                    <p class="nav-text"><i class="fa fa-bars" style="font-size:23px;color:#fff;"></i></p>
+                    <ul class="s-12 l-2">
+                      <li class="logo hide-s hide-m">
+                         <a href="http://localhost:9000/"><strong>Hospital's</strong><br/>Reservation</a>
+                      </li>
+                   </ul>
+                    <div class="top-nav s-12 l-5">
+                       <ul class="top-ul chevron">
+                          <li><a href="http://localhost:9000/management_room" style="font-size: 17px"><i class="fa fa-hospital-o" style="font-size:21px; color:#fff;"></i> จัดการข้อมูลห้องพัก</a>
+                          </li>
+                          <li><a href="http://localhost:9000/medical_data" style="font-size: 17px"><i class="fa fa-drivers-license" style="font-size:21px; color:#fff;"></i> จัดการข้อมูลเวชระเบียน</a>
+                          </li>
+                          <li><a href="http://localhost:9000/payment" style="font-size: 17px"><i class="fa fa-usd" style="font-size:21px; color:#fff;"></i> รับชำระเงิน</a>
+                          </li>
+                       </ul>
+
+                       <ul class="top-ul chevron right">
+                        <li><a href="http://localhost:9000/" style="font-size: 17px;"><i class="fa fa-user-md " style="font-size:21px; color:#fff;"></i> ออกจากระบบ</a>
+                        </li>
+                     </ul> 
+
+
+                    </div>
+
+                 </div>
+              </div>
+           </nav>
+      </header>
+      
+      <section>
+         <div id="head">
+            <div class="line">
+              <div class="container">
+                  <a class="center" style="font-size: 26px;">จัดการข้อมูลเวชระเบียน</a>
+                  <br>
+                      <form>
+                        <div>
+                            <div class="img">
+                                <img  id="blah" src="/assets/images/user_photo.jpg" alt="your image" ><br>
+                                <input  type='file' onchange="readURL(this);" />
+                            </div>
+                          <div class="idem">
+                            <label for="idemployee">รหัสHN : </label>
+                            <input class="box-only" type="text" id="idemployee">
+                          </div>
+                        </div>
+
+                          <div >
+                            <label for="name">ชื่อ-สกุล:</label><br>
+                            <input  class="box-double" type="text" id="name" placeholder="ชื่อ">
+                            <input  class="box-double" type="text" id="name" placeholder="นามสกุล">
+                          </div>
+                          <div>
+                            <label>เลขบัตรประชาชน:</label><br>
+                            <input class="box-only"  type="text" id="inputEmail4" placeholder="เลขบัตรประชาชน">
+                          </div>
+                        
+
+                          <div class="form-rowname1">
+                            <div class="col">
+                              <label for="inlineRadio1">เพศ:</label><br> 
+                              <input style="margin-left: 20px;" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"><a style="font-size: 16px;"> :ชาย</a><br>
+                              <input style="margin-left: 20px;" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"><a style="font-size: 16px;"> :หญิง</a>
+                            </div>
+
+                            <div class="col" style="margin-left: 50px">
+                              <label for="dateofbirth">วันเดือนปีเกิด:</label><br>
+                              <input type="date" name="dateofbirth" id="dateofbirth">  
+                            </div>
+                            <div class="col tab-10">
+                                <label for="inputEmail4">เชื่อชาติ:</label><br>
+                                <input style="width: 100px;" type="text"  id="inputEmail4" placeholder="เชื่อชาติ">
+                             </div>
+                            <div class="col tab-10-1">
+                                 <label for="inputEmail4">สัญชาตฺ:</label><br>
+                                 <input style="width: 100px;" type="text"  id="inputEmail4" placeholder="สัญชาตฺ">
+                            </div>
+                            <div class="col tab-10-1">
+                                <label for="inputEmail4">ศาสนา:</label><br>
+                                <input style="width: 100px;" type="text"  id="inputEmail4" placeholder="ศาสนา">
+                            </div>
+                            <div class="col tab-10-1">
+                                <label for="inputEmail4">หมู่เลือด:</label><br>
+                                <select id="inputState" class="form-control">...</option>
+                                  <option>A</option>
+                                  <option>B</option>
+                                  <option>AB</option>
+                                  <option>O</option>
+                                </select> 
+                            </div>
+                          </div>
+                      <div class="form-rowname4">
+                              <div class="col">
+                                 <label for="inputEmail4">ที่อยู่:</label><br>
+                                 <input style="width: 100px;" type="text" class="control" id="inputEmail4" placeholder="ที่อยู่">
+                              </div>
+                              <div class="col tab-10">
+                                  <label for="inputEmail4">ซอย:</label><br>
+                                  <input style="width: 150px;" type="text" class="control" id="inputEmail4" placeholder="ซอย">
+                             </div>
+                             <div class="col tab-10">
+                                  <label for="inputEmail4">หมู่ที่:</label><br>
+                                  <input style="width: 100px;" type="text" class="control" id="inputEmail4" placeholder="หมู่ที่">
+                             </div>
+                             <div class="col tab-10">
+                                <label for="inputEmail4">ตำบล:</label><br>
+                                <input type="text" class="control" id="inputEmail4" placeholder="ตำบล">
+                           </div>
+                         </div>
+                        
+                         <div class="form-rowname1">
+                            <div class="col">
+                                <label for="inputEmail4">อำเภอ:</label><br>
+                                <input type="text" class="control" id="inputEmail4" placeholder="อำเภอ">
+                             </div>
+                             <div class="col tab-10">
+                                 <label for="inputEmail4">จังหวัด:</label><br>
+                                 <input type="text" class="control" id="inputEmail4" placeholder="จังหวัด">
+                              </div>
+                         </div>
+                         <div>
+                          <div class="col">
+                              <label for="inputEmail4">โทรศัพท์:</label><br>
+                              <input type="text" class="control" id="inputEmail4" placeholder="+66">
+                        </div>
+                      </div>
+                      <div >
+                          <div class="col">
+                              <label for="exampleFormControlTextarea1">ประวัติการรักษา:</label><br>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix right-2">
+                          <input class="chack" type="checkbox" name="vehicle" value="Bike" >ยืนยันข้อมูลถูกต้อง<br>
+                          <button type="submit" class="signupbtn ">ตกลง</button>
+                          <button type="button" class="cancelbtn ">ยกเลิก</button>
+                        </div>
+                    </form>
+              </div>
+            </div>
+         </div>
+      </section>
+      
+      <!-- FOOTER -->   
+      <footer>
+         <div class="line">
+            <div class="s-12 l-6">
+               <p>Copyright 2015, Vision Design - graphic zoo
+               </p>
+            </div>
+            <div class="s-12 l-6">
+               <p class="right">
+                  <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+               </p>
+            </div>
+         </div>
+      </footer> 
+      <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+              reader.onload = function (e) {
+              $('#blah')
+                  .attr('src', e.target.result);
+              };
+
+            reader.readAsDataURL(input.files[0]);
+          }
+        }
+      </script>
+   </body>
+</html>s

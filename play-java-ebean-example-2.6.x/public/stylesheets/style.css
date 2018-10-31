@@ -1,0 +1,164 @@
+body{
+    width: 1500px;
+    margin: 0 auto;    
+}
+.form-goup{
+    width: 0;
+
+    margin: 0 auto;
+}
+img{
+    max-width: 180px;
+    max-height: 130px;
+   
+}
+.img{
+
+    width: 120;
+    height: 120;
+    margin-left: 550px;
+    margin-top: -250px;
+}
+.control {
+    display: block;
+    width: 113%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c4c4c4;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.Data{
+    width: 120;
+    height: 120;
+    margin-left: 13;
+    margin-top: 10;
+}  
+input[type=file]{
+  padding:10px;
+}
+.form-rowname {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    width: 500;
+    margin-top: 13px;
+}
+.form-rowname1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 75px;
+    margin-left: 220;
+    margin-top: -120;
+    width: 485px;
+}
+.form-rowname2{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 150;
+    margin-left: 0;
+    margin-top: 12;
+
+}
+.form-rowname3{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: 13;
+    margin-top: -55px;
+}
+.form-rowname4{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: 0;
+    margin-top: 12;
+    width: 700;
+}
+.form-rowname5{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: 0;
+    margin-top: 12;
+    width: 175px;
+}
+.form-rowname6{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: 0;
+    margin-top: 12;
+    width: 200px;
+}
+.form-phon{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -13px;
+    margin-top: 5px;
+    width: 300;
+}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 12px;
+    padding-left: 10px;
+}
+.form-HN{
+    margin-right: 120;
+    margin-left: 200;
+    margin-top: 120;
+}
+.control00{
+    display: flex;
+    flex-wrap: wrap;
+    width: 120;
+   
+}
+.form-put{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.chack{
+    width: 13px;
+}
+
+.w3-btn, .w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 80;
+}
+.form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: .3125rem;
+    margin-left: 15px;
+    width: 17;
+}
+.form-check-inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: .75rem;
+    margin-top: 20;
+}
+

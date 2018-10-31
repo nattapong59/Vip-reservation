@@ -1,0 +1,99 @@
+
+.box-twin{
+    width: 300px;
+}
+.box-only{
+    width: 300px;
+}
+
+label{
+    font-size: 18px;
+}
+
+.line-hr{
+    border-color: #ccc;
+
+}
+
+span{
+    font-size:18px;
+}
+
+input[type=radio]{
+    margin: 5px 0;
+}
+
+
+input[type=text], select {
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:hover,input:focus{
+    background-color: #fff;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    margin:0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+/* buttom submit */
+.right-2 {
+	text-align: right;
+}
+
+.signupbtn, .cancelbtn{
+    background-color: rgb(0, 30, 34);
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+.signupbtn:hover {
+    background-color: #2fcbe0;
+}
+.cancelbtn:hover {
+    background-color: #f44336;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width:850px) {
+.box-twin{width: 49%}
+}
+@media screen and (max-width:600px) {
+.cancelbtn, .signupbtn {width: 100%;}
+.box-twin{width: 100%}
+.box-only{width: 100%}
+}
+
+@media screen and (max-width:480px) {
+.container{width: 100%}
+}
+
+
+

@@ -1,0 +1,290 @@
+.idem{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    width: 430px;
+}
+.tab-10-1{margin-left: 10px;}
+.tab-10{
+    margin-left: 10px;
+}
+.box-double{
+    width: 220px;
+}
+.box-only{
+    width: 280px;
+}
+.box-triple{
+    width: 300px;
+}
+
+label{
+    font-size: 16px;
+}
+
+.line-hr{
+    border-color: #ccc;
+
+}
+
+span{
+    font-size:18px;
+}
+
+input[type=radio]{
+    margin: 5px 0;
+}
+
+.form-control{
+    width: 100%;
+}
+
+
+input[type=text], select {
+    background-color: #f2f2f2;
+    padding: 4px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+        background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+        background-color: #f2f2f2;
+        padding: 3px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 150px;
+    }
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
+input:hover,input:focus{
+
+    background-color: #fff;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    margin:0 auto;
+}
+
+form{
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    margin:0 auto;
+}
+.center {
+	text-align: center;
+}
+
+
+
+/* buttom submit */
+.right-2 {
+	text-align: right;
+}
+
+.signupbtn, .cancelbtn{
+    background-color: rgb(0, 30, 34);
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+.signupbtn:hover {
+    background-color: #2fcbe0;
+}
+.cancelbtn:hover {
+    background-color: #f44336;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width:850px) {
+.box-double{width: 49%}
+.idem{width: 100%}
+.tab-10-1{margin-left: 0px;}
+}
+
+@media screen and (max-width:600px) {
+.cancelbtn, .signupbtn {width: 100%;}
+.box-double{width: 100%}
+.box-only{width: 100%}
+.idem{width: 100%}
+}
+
+@media screen and (max-width:480px) {
+.container{width: 100%} 
+}
+
+
+.form-goup{
+    width: 0;
+
+    margin: 0 auto;
+}
+img{
+    max-width: 150px;
+    max-height: 150px;
+    margin-left: 30px;
+}
+.img{
+    width: 80;
+    height: 80;
+    float: right;
+}
+
+.Data{
+    width: 120;
+    height: 120;
+    margin-left: 13;
+    margin-top: 10;
+}  
+input[type=file]{
+    width: 220px;
+  padding:10px;
+}
+.form-rowname {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    width: 500;
+    margin-top: 13px;
+}
+.form-rowname1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 75px;
+    margin-left: 220;
+    margin-top: -120;
+    width: 100%;
+}
+.form-rowname2{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 150;
+    margin-left: 0;
+    margin-top: 12;
+
+}
+.form-rowname3{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: 13;
+    margin-top: -55px;
+}
+.form-rowname4{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: 0;
+    margin-top: 12;
+    width: 700;
+}
+.form-rowname5{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: 0;
+    margin-top: 12;
+    width: 500px;
+}
+.form-rowname6{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -2px;
+    margin-left: 0;
+    margin-top: 12;
+    width: 200px;
+}
+.form-phon{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -13px;
+    margin-top: 5px;
+    width: 300;
+}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 12px;
+    padding-left: 10px;
+}
+.form-HN{
+    margin-right: 120;
+    margin-left: 200;
+    margin-top: 120;
+}
+
+.form-put{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.chack{
+    width: 13px;
+}
+
+.w3-btn, .w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 80;
+}
+.form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: .3125rem;
+    margin-left: 15px;
+    width: 17;
+}
+.form-check-inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: .75rem;
+    margin-top: 20;
+}
+
+
+
+

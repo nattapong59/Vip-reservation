@@ -1,33 +1,137 @@
-@(content: Html)
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Computers database</title>
-        @*************************************
-        <link rel='stylesheet' href='@routes.Assets.at("lib/bootstrap/css/bootstrap.min.css")'>
-        <link rel='stylesheet' href='@routes.Assets.at("lib/font-awesome/css/font-awesome.min.css")'>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>หน้าหลัก</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/stylesheets/responsee.css">
+    <link rel="stylesheet" href="/assets/stylesheets/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/stylesheets/owl.theme.css">
+    <link rel="stylesheet" href="/assets/stylesheets/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- CUSTOM STYLE -->  
+    <script type="text/javascript" src="/assets/javascripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/assets/javascripts/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="/assets/javascripts/responsee.js"></script>   
+ </head>
+<body class="size-1140">
+  <!-- TOP NAV WITH LOGO --> 
+  <header>
+    <nav>
+            <div class="line">
+               <div class="top-nav">              
+                  <div class="logo hide-l">
+                    <a href=""><strong>Hospital's</strong><br/>Reservation</a>
+                  </div>                  
+                  <p class="nav-text"><i class="fa fa-bars" style="font-size:23px;color:#fff;"></i></p>
+                  <ul class="s-12 l-2">
+                    <li class="logo hide-s hide-m">
+                       <a href=""><strong>Hospital's</strong><br/>Reservation</a>
+                    </li>
+                 </ul>
+                  <div class="top-nav s-12 l-5">
+                     <ul class="top-ul chevron">
+                        <li><a href="http://localhost:9000/booking"style="font-size: 17px"><i class="fa fa-hotel" style="font-size:21px; color:#fff;"></i> จองห้องพัก</a>
+                        </li>
+                        <li><a href="http://localhost:9000/check"style="font-size: 17px"><i class="fa fa-calendar" style="font-size:21px; color:#fff;"></i> ตรวจสอบการจอง</a>
+                        </li>
+                        <li><a href="http://localhost:9000/rules" style="font-size: 17px"><i class="fa fa-gavel" style="font-size:21px; color:#fff;"></i> ระเบียบ</a>
+                        </li>
+                     </ul>
+
+                     <ul class="top-ul chevron right">
+                      <li><a href="../design/contact.html" style="font-size: 17px;"><i class="fa fa-user-md " style="font-size:21px; color:#fff;"></i> ผู้ดูแลระบบ</a>
+                      </li>
+                   </ul> 
+
+
+                  </div>
+
+               </div>
+            </div>
+         </nav>
+</header>
+  
+  <section>
+      <!-- CAROUSEL -->  	
+      <div class ="carousel-image">
+        <div class="carousel-text">
+          <div class="line">
+            <div class="s-12 l-9">
+              <h2>ยินดีตอนรับเข้าสู่ระบบจองห้องพักผู้ป่วย</h2>
+            </div>
+            <div class="s-12 l-9">
+              <p>โรงพยาบาลมหาวิทยาลัยอุบลราชธานี</p>
+            </div>
+          </div>
+          <div class="carousel-btm">                      
+                <a class="btn btn-one" href="http://localhost:9000/booking" style="color: #fff">จองห้องพักผู้ป่วย</a>			
+          </div>
+        </div>
+      </div>
+  
+      <!-- FIRST BLOCK --> 	
+      <div id="first-block">
+        <div class="line">
+          <h2>Some awesome blocks</h2>
+          <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+          <div class="margin">
+            <div class="s-12 m-6 l-3 margin-bottom">
+              <i class="fa fa-youtube-play icon2x"></i>
+              <h3>About</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="s-12 m-6 l-3 margin-bottom">
+              <i class="icon-star icon2x"></i>
+              <h3>Company</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="s-12 m-6 l-3 margin-bottom">
+              <i class="fa fa-gear icon2x"></i>
+              <h3>Services</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="s-12 m-6 l-3 margin-bottom">
+              <i class="icon-mail icon2x"></i>
+              <h3>Contact</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  <footer>
+    <div class="line">
+        <div class="s-12 l-6">
+          <p>Copyright 2015, Vision Design - graphic zoo</p>
+        </div>
+        <div class="s-12 l-6">
+            <p class="right">
+            <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a></p>
+        </div>
+    </div>
+</footer>
+<script>
+        function myFunction() {
+            var x, text;
+            
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb").value;
         
-        <script src="@routes.Assets.at("lib/jquery/jquery.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.at("lib/bootstrap/js/bootstrap.min.js")" type="text/javascript"></script>
-        *************************************@
-        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
-        
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")"/> 
-    </head>
-    <body>
-        
-        <header class="topbar">
-            <h1 class="fill">
-                <a href="@routes.HomeController.index()">
-                    Play sample application &mdash; Computer database
-                </a>
-            </h1>
-        </header>
-        
-        <section id="main">
-            @content
-        </section>
-        
-    </body>
-</html>
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x < 1 || x > 10) {
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+
+</body></html>
+
+
